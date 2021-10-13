@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port: number = 3000;
 
 app.get("/user", (req, res) => {
   // res.header("Access-Control-Allow-Origin", req.headers.origin);
@@ -8,7 +8,7 @@ app.get("/user", (req, res) => {
 });
 
 app.get("/post", (req, res) => {
-  res.send("hello post");
+  res.send("hello post wuwu");
 });
 
 app.listen(port, () => {
